@@ -23,7 +23,7 @@ con.connect(function (err) {
 	let sql = fs.readFileSync(__dirname + "/init_db.sql").toString();
 	con.query(sql, function (err, result) {
 		if (err) throw err;
-		console.log("Table creation `practicum` was successful!");
+		console.log("Table creation in `practicum` db was successful!");
 
 		console.log("Closing...");
 	});
